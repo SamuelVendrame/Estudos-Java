@@ -3,6 +3,8 @@ package ex4;
 public class Inimigo extends EntidadeBase{
     double dano = 5.0;
 
+    public Inimigo() {}
+
     public Inimigo(String nome, Double vida){
         super(nome, vida);
     }
@@ -13,6 +15,10 @@ public class Inimigo extends EntidadeBase{
 
     public double atacar(){
         System.out.println("Dano inflingido: " + this.dano);
+        return dano;
+    }
+
+    public double  getDano() {
         return dano;
     }
 }
